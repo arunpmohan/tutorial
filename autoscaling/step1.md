@@ -1,6 +1,7 @@
 Launch your kubernetes cluster.
 
-## Task
+launch.sh {{execute}}
 
+Run the following and make sure your both pods are ready.
 
-echo 'Start kubernetes cluster' {{execute}}
+kubectl get nodes {{execute}}
