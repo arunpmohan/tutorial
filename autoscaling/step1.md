@@ -13,3 +13,11 @@ Initialize helm and global chart repository.
 The following command should return neither errors nor any output. But should return as a noop.
 
 `helm ls`{{execute}}
+
+Get Prometheus customization files.
+
+`curl -O https://github.com/arunpmohan/tutorial/blob/master/autoscaling/prometheus/prometheus.yaml`{{execute}}
+
+Install Prometheus Agent.
+
+`helm install -f prometheus.yaml stable/prometheus --version 2.13.1 --name pm`{{execute}}
