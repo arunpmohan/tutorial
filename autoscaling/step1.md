@@ -20,4 +20,4 @@ Get Prometheus customization files.
 
 Install Prometheus Agent.
 
-`helm install -f prometheus.yaml stable/prometheus --version 2.13.1 --name pm`{{execute}}
+`helm install -f prometheus.yaml stable/prometheus --version 11.0.4 --name pm`{{execute}}
