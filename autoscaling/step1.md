@@ -3,22 +3,21 @@ Kubernetes should be running and you can make sure of the by running the followi
 
 Run the following and make sure your both nodes are ready.
 
-`kubectl get nodes`{{execute}}
+`kubectl get nodes`{{execute HOST1}}
 
 Run helm check to make sure it just works without errors.
 
-`helm ls`{{execute}}
+`helm ls`{{execute HOST1}}
 
 Install Prometheus Agent.
 
-`helm install -f prometheus.yaml stable/prometheus --version 11.0.4 --name monitoring`{{execute}}
+`helm install -f prometheus.yaml stable/prometheus --version 11.0.4 --name monitoring`{{execute HOST1}}
 
-Make sure prometheus server is up by waiting till pod shows 1/1 as status.
 
 Install ingress controller
-`helm install -f ingress.yaml stable/nginx-ingress`{{execute}}
+`helm install -f ingress.yaml stable/nginx-ingress --version 1.34.2`{{execute HOST1}}
 
-`kubectl get pods --watch`{{execute}}
+`kubectl get pods --watch`{{execute HOST2}}
 
 Access the url to make sure basic 404 page is displayed.
 

@@ -1,1 +1,4 @@
-export CLUSTER_IP=$(kubectl get services/autoscale-service -o go-template='{{(index .spec.clusterIP)}}')
+Access the url to make sure prometheus UI is accessible.
+
+You can do PromQL here to see any monitored values.
+https://[[HOST_SUBDOMAIN]]-32123-[[KATACODA_HOST]].environments.katacoda.com/
