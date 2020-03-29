@@ -5,9 +5,6 @@ Run the following and make sure your both nodes are ready.
 
 `kubectl get nodes`{{execute}}
 
-Run helm check to make sure it just works without errors.
-
-`helm ls`{{execute}}
 
 Install Prometheus Agent.
 
