@@ -1,70 +1,67 @@
 {
-  "title": "Java Application Autoscaling",
-  "description": "",
-  "difficulty": "Advanced",
-  "time": "10",
-  "details": {
+	"title": "Java Application Autoscaling",
+	"description": "",
+	"difficulty": "Advanced",
+	"time": "10",
+	"details": {
 
-    "intro": {
-        "courseData": "execute.sh",
-      },
+		"intro": {
+			"courseData": "execute.sh",
+			"text": "intro.md"
+		},
 
-      "assets": {
-      "client": [
-        {
-          "file": "*.yaml",
-          "target": "~/"
-        },
-        {
-          "file": "*.sh",
-          "target": "~/",
-          "chmod": "+x"
-        }
-      ]
-    },
+		"assets": {
+			"client": [{
+					"file": "*.yaml",
+					"target": "~/"
+				},
+				{
+					"file": "*.sh",
+					"target": "~/",
+					"chmod": "+x"
+				}
+			]
+		},
 
-    "steps": [
-      {
-        "title": "Step 1",
-        "text": "step1.md",
-        "courseData": "launch.sh",
-      },
-      {
-        "title": "Step 2",
-        "text": "step2.md"
-      },
-      {
-        "title": "Step 3",
-        "text": "step3.md"
-      },
-      {
-        "title": "Step 4",
-        "text": "step4.md"
-      },
-      {
-        "title": "Step 5",
-        "text": "step5.md"
-      },
-      {
-        "title": "Step 6",
-        "text": "step6.md"
-      },
-      {
-        "title": "Step 7",
-        "text": "step7.md"
-      }
-    ],
-    "intro": {
-      "text": "intro.md"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
-  "environment": {
-    "uilayout": "terminal"
-  },
-  "backend": {
-    "imageid": "kubernetes-cluster-running"
-  }
+		"steps": [{
+				"title": "Step 1",
+				"text": "step1.md"
+
+			},
+			{
+				"title": "Step 2",
+				"text": "step2.md"
+			},
+			{
+				"title": "Step 3",
+				"text": "step3.md"
+			},
+			{
+				"title": "Step 4",
+				"text": "step4.md"
+			},
+			{
+				"title": "Step 5",
+				"text": "step5.md"
+			},
+			{
+				"title": "Step 6",
+				"text": "step6.md"
+			},
+			{
+				"title": "Step 7",
+				"text": "step7.md"
+			}
+		],
+
+		"finish": {
+			"text": "finish.md"
+		}
+	},
+	"environment": {
+		"uilayout": "terminal"
+	},
+	"backend": {
+		"imageid": "kubernetes-cluster-running"
+	}
 }
