@@ -30,6 +30,16 @@
 					"target": "~/",
 					"chmod": "+x"
 				}
+			],
+      "host02": [{
+					"file": "*.yaml",
+					"target": "~/"
+				},
+				{
+					"file": "*.sh",
+					"target": "~/",
+					"chmod": "+x"
+				}
 			]
 		},
 
