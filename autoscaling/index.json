@@ -4,10 +4,30 @@
   "difficulty": "Advanced",
   "time": "10",
   "details": {
+
+    "intro": {
+        "courseData": "execute.sh",
+      },
+
+      "assets": {
+      "client": [
+        {
+          "file": "*.yaml",
+          "target": "~/"
+        },
+        {
+          "file": "*.sh",
+          "target": "~/",
+          "chmod": "+x"
+        }
+      ]
+    },
+
     "steps": [
       {
         "title": "Step 1",
-        "text": "step1.md"
+        "text": "step1.md",
+        "courseData": "launch.sh",
       },
       {
         "title": "Step 2",
