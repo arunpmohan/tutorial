@@ -1,0 +1,21 @@
+apiVersion: autoscaling/v2beta2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: autoscale-hpa
+  labels:
+    app: autoscale-demo
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1beta1
+    kind: Deployment
+    name: autoscale-deployment
+  minReplicas: 1
+  maxReplicas: 5
+  metrics:
+  - type: Pods
+    pods:
+      metric:
+        name: com_autoscaling_sample_counter_count
+      target:
+        type: AverageValue
+        averageValue: 10

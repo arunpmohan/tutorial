@@ -281,7 +281,7 @@ controller:
     #   tcp:
     #     8080: 32808
     nodePorts:
-      http: ""
+      http: "32334"
       https: ""
       tcp: {}
       udp: {}

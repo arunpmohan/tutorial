@@ -51,9 +51,9 @@ rules:
          kubernetes_pod_name:
            resource: pod
      name:
-       matches: "^autoscaling(.*)"
-       as: "autoscaling_$1"
-     metricsQuery: jvm_memory_bytes_used{app=~".*smp-core.*",area="heap"}
+       matches: "^com_autoscaling_sample_counter_count"
+       as: "com_autoscaling_sample_counter_count"
+     metricsQuery: com_autoscaling_sample_counter_count{app="autoscale-demo"}
  # Mounts a configMap with pre-generated rules for use. Overrides the
 # default, custom, external and resource entries
   existing:

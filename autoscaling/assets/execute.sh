@@ -1,2 +1,2 @@
 launch.sh
-helm init
+helm init --wait
